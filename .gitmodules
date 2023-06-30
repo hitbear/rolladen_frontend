@@ -1,0 +1,3 @@
+[submodule "smart_rolladen"]
+	path = smart_rolladen
+	url = git@github.com:hitbear/smart_rolladen.git
