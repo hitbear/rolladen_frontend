@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, url_for
 import smart_rolladen
 
 app = Flask(__name__)
@@ -56,6 +56,7 @@ def index():
 
         else:
             pass # unknown
+        return redirect(url_for("index"))
     elif request.method == 'GET':
         return render_template('index.html')
     
